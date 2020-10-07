@@ -31,8 +31,7 @@ O retornor da função é determinado apenas pelos valores de entrada. E não de
 
 ```javascript
 //Função impura pois o retorno depende de
-//um valor externo, nesse caso o PI. -> O que pode ocasionar efeitos colaterais
-
+//um valor externo, nesse caso o PI -> O que pode ocasionar efeitos colaterais
 const PI = 3.14;
 function area(raio){
   return raio * raio * PI;
@@ -40,7 +39,7 @@ function area(raio){
 
 //Função Pura : Todo o cálculo é feito dentro do escopo da função
 function area(raio, pi){
-  return raio * raio * PI;
+  return raio * raio * pi;
 }
 ```
 
