@@ -21,9 +21,9 @@ do novo array. true | false
 Executa operações com base em um acumulador inicial. No final da execução traz a
 resposta com todos os dados acumulados. (O tipo final será o mesmo do tipo inicial de acumulador)
 
-### PROMISE
+### Promise
 
-Uma promessa será realizada no futuro;
+Uma promise será realizada no futuro
 
 #### Funções Puras e Impuras
 
