@@ -9,7 +9,7 @@ dentro deste array.
 
 O objetivo do map é transformar o array de origem em um novo array destino.
 
-| Retorna um novo array com a lógica aplicada da callback
+Retorna um novo array com a lógica aplicada da callback
 
 ### Operador Filter
 
@@ -29,20 +29,20 @@ Uma promessa será realizada no futuro;
 
 O retornor da função é determinado apenas pelos valores de entrada. E não deve ocasionar efeitos colaterais
 
-ex:
-
+```javascript
 //Função impura pois o retorno depende de
-um valor externo, nesse caso o PI. -> O que pode ocasionar efeitos colaterais
+//um valor externo, nesse caso o PI. -> O que pode ocasionar efeitos colaterais
 
 const PI = 3.14;
 function area(raio){
-return raio * raio * PI;
+  return raio * raio * PI;
 }
 
-//Função Pura
+//Função Pura : Todo o cálculo é feito dentro do escopo da função
 function area(raio, pi){
-return raio * raio * pi;
+  return raio * raio * PI;
 }
+```
 
 ### Conceitos
 
@@ -67,10 +67,11 @@ return raio * raio * pi;
   Um Wrapper para os objetos (container), encapsula os dados e implementam a função MAP
 
 ### Operador flat
-  Achata um array, caso exista um array dentro de um array (matriz). Pode-se usar o flat para achatar
-  o array em determinado nivel array.flat(1)
 
+Achata um array, caso exista array dentro de array (matriz). Pode-se usar o flat para achatar
+o array em determinado nivel array.
 
-### Documentação RxJs
-
- - Operador debounce: executa algo dentro de determinado intervalo de tempo
+```javascript
+  let array = ['A', 'B', 'C', ['D', 'E', 'F']];
+  array.flat(1); // ['A','B', 'C', 'D', 'E', 'F'];
+```
